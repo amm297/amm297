@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "ng build --prod --output-path docs --base-href=\"https://amm297.github.io/amm297/\" && git add . && git commit -a -m \"Deploy updated\" && git push -u origin master"
   },
   "private": true,
   "dependencies": {
