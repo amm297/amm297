@@ -8,6 +8,7 @@ import { ResumeComponent } from "./pages/resume/resume.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppTranslateModule } from "./modules/translate/translate.module";
 import { InlineSVGModule } from "ng-inline-svg";
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { InlineSVGModule } from "ng-inline-svg";
     HeaderComponent,
     FooterComponent,
     ResumeComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
