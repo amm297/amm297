@@ -118,8 +118,13 @@
               "devServerTarget": "amm297:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "amm297"
 }
