@@ -1,0 +1,19 @@
+:host {
+  div {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 1rem;
+    background-color: var(--primary-color);
+    padding: 0px var(--medium-pdding);
+  }
+
+  nav {
+    background-color: var(--red-color);
+    padding: var(--point-four-rem-padding);
+
+    a {
+      text-decoration: none;
+      
+    }
+  }
+}

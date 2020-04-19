@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  title = 'amm297';
+  title = "amm297";
+
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang("es");
+  }
 }
