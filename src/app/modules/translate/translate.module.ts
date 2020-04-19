@@ -12,7 +12,7 @@ import { HttpClient, HttpClientModule } from "@angular/common/http";
       loader: {
         provide: TranslateLoader,
         useFactory: (http: HttpClient) => {
-          return new TranslateHttpLoader(http);
+          return HttpLoaderFactory(http);
         },
         deps: [HttpClient],
       },
@@ -24,5 +24,5 @@ export class AppTranslateModule {}
 
 // required for AOT compilation
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, "/assets/i18n/", ".json");
+  return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
 }
